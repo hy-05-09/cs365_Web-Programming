@@ -1,5 +1,5 @@
 ## 🎥 Demo Video
-![demo](./demo/demo.mp4)
+<video src="./demo/demo.mp4" controls width="600"></video>
 
 ## 🎮 Features
 - reactive state 관리
