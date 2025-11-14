@@ -1,0 +1,31 @@
+
+
+
+body {
+    margin-top: 4%;
+    margin-bottom: 0%;
+    background-image: url(../first\ page/img/background.jpg);
+    padding: 1% 0%;
+}
+
+
+
+h1, h2, p {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+a:link, a:visited, a:focus, a:hover, a:active {
+	color: black;
+    background-color: lightgray;
+    font-style: italic;
+}
+
+#gallery {
+    text-align: center;
+}
+
+img {
+    border: inset 5px gainsboro;
+    margin: 1%;
+}

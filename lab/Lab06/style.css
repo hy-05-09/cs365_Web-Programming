@@ -1,0 +1,50 @@
+body{
+    background-color: bisque;
+    text-align: center;
+    margin: 3% 10% 0% 10%;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#gallery img{
+    border: gray solid 7px;
+    margin-left: 4%;
+}
+
+#gallery img.yellow{
+    border: yellow solid 7px;
+    box-shadow: 0 0 20px 5px orange;
+}
+
+#align {
+    display: flex;
+}
+
+#content {
+    text-align:left;
+}
+
+#description {
+    font-size: 25px;
+    margin-left: 1%;
+}
+
+#filled {
+    color: red;
+     -webkit-text-stroke: 2px #000000;
+     font-family: initial;
+}
+
+#empty {
+    color: #fff;
+    font-family: initial;
+     -webkit-text-stroke: 2px #000000;
+}
+
+h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 30px;
+}
+

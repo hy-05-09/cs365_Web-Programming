@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script defer src="client.js"></script>
+    
+</head>
+<body>
+    <div id="app">
+        <h1>Select a Minecraft mob</h1>
+        <div id="gallery">
+            <img v-for="(character,i) in characters" :key="i" :src="character.src" :class="{yellow: character.selected}" @click="togleAll(i)">
+        </div>
+        <div id="content" v-if="currentCharacter">
+            <h2>{{currentCharacter.name}}</h2>
+            <div id="align">
+                <img  :src="currentCharacter.webp" alt="" height="350">
+                <div id="description">
+                    <p>{{currentCharacter.health}}</p>
+                    <p>{{currentCharacter.behavior}}</p>
+                    <p>{{currentCharacter.description}}</p>
+                </div>          
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+
+
+body {
+    margin-top: 4%;
+    margin-bottom: 0%;
+    background-image: url(img/background.jpg);
+    padding: 0%;
+}
+
+h1, h2, p {
+    text-align: center;
+}

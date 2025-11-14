@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script defer src="client.js"></script>
+</head>
+<body>
+    <div id="myApp">
+        <pre>{{feedback}}</pre>
+        <div>
+            <button @click="fetchNumCandidates">Get candidate count</button>
+        </div>
+        <div>
+            <label for="person">Person to vote for:</label>
+            <input type="text" id="person" v-model="candidate">
+            <button @click="recordVote">Vote for person</button>
+	    </div>
+        <div>
+            <label for="person">Search for:</label>
+            <input type="text" id="person2" v-model="candidate2">
+            <button @click="fetchVotesPerCandidates">Get the candidate's count</button>
+	    </div>
+        <div>
+            <input type="password" v-model="password" placeholder="Set password">
+            <button @click="reset">Reset vote</button>
+        </div>
+        <div>
+            <button @click="fetchTotalVotes">See total votes</button>
+        </div>
+    </div>
+</body>
+</html>

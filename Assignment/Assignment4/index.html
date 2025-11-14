@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script defer src="client.js"></script>
+</head>
+<body>
+    <div id="app">
+        <div class="grid">
+                <div class="left">
+                    <img v-if="wolfLeft" src="img/wolf.jpg" alt="">
+                    <img v-if="goatLeft" :class="{gray:goatGray}"  src="img/goat.jpg" alt="">
+                    <img v-if="cabbageLeft" :class="{gray:cabbageGray}"  src="img/cabbage.jpg" alt="">
+                    <img v-if="boatLeft" src="img/boatLeft.jpg" alt="">
+                </div>
+                <div class="right">
+                    <img v-if="wolfRight" src="img/wolf.jpg" alt="">
+                    <img v-if="goatRight" :class="{gray:goatGray}" src="img/goat.jpg" alt="">
+                    <img v-if="cabbageRight" :class="{gray:cabbageGray}" src="img/cabbage.jpg" alt="">
+                    <img v-if="boatRight" src="img/boatRight.jpg" alt="">
+                </div>
+                <div class="bottom">
+                    <button @click="moveCabbage" :disabled="buttonDisabled">Move cabbage</button>
+                    <button @click="moveGoat" :disabled="buttonDisabled">Move goat</button>
+                    <button @click="moveWolf" :disabled="buttonDisabled">Move wolf</button>
+                    <button @click="moveBoat" :disabled="buttonDisabled">Move boat only</button>
+                    <button @click="reset">Reset</button>
+                    <br>
+                    <p>See if you can get them all safely across the river</p>
+                </div>
+        </div>
+        <div v-if="message" :class="['message',{green:success, red:fail}]">
+            {{message}}
+        </div>
+    </div>
+</body>
+</html>

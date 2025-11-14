@@ -1,0 +1,24 @@
+
+body {
+    background-image: url("img/1/blue003.jpg");
+}
+
+#main { /*This means id="main"*/
+     padding : 25px;
+     width: 75%;
+     margin-left: auto;
+     margin-right: auto;
+     border: 3px double black;
+}
+
+h1  {
+    text-align: center;
+    background-image: url("img/1/orang035.gif");
+    padding: 25px;
+    color : white;
+    margin: 0;
+    position: relative;
+    left: -25px;
+    width: calc(100% + 50px); /*content, padding 어쩌구 이해안감*/
+    box-sizing: border-box; /*The width specified above INCLUDES the padding and border, if any*/
+}

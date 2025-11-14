@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="client.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app">
+    <!-- All HTML code for your application goes in here -->
+     {{message}} <!--One-way binding. The variable is simply rendered here (its value)-->
+     <br>
+    <input type="text" v-model="message">
+    <button v-on:click="changeTheText">Click me!</button>
+    <br>
+    <br>
+    <input type="text" v-model="theURL">
+    <br>
+    <a v-bind:href="theURL">Click here to follow the URL in the text element above</a>
+
+    
+    <div v-if="message == 'showPeople">
+        <div v-for="person of myObjects"> <!--'for of' and 'for in' do the same thing in Vue (unlike in)-->
+        {{person.name}} has a GPA of {{person.gpa}}.
+        </div>
+    </div>
+    <div v-else=>
+        To see the stooges, enter the text showPeople in the first text box above.
+    </div>
+    <br> <br>
+    <input type= "number" v-model="count">
+    <div v-for="n of count">
+        <span v-for="b of count">
+            🩵
+        </span> 
+        <!-- div 안에 div vs div 안에 span -->
+    </div>
+</div>
+</body>
+</html>

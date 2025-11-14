@@ -1,0 +1,43 @@
+
+body {
+    background-image: url("img/texture4.jpg");
+}
+
+#main   {
+    padding : 25px;
+    width: 75%;
+    background-image: url("img/texture37.jpg");
+    background-size: 100% auto;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px double blue;
+    margin-bottom: 10%;
+}
+
+h1, h2  {
+    font-family: Papyrus, fantasy;
+}
+
+h1, h2, p, ul  {
+    color : white;
+}
+
+p, ul {
+    font-weight: 200;
+}
+
+span {
+    background-color: rgba(127, 255, 212, 0.6);
+}
+
+img {
+    margin-right: 0%;
+    border: 5px inset;
+    margin-left:15px;
+    width: 400px;
+    float: right;
+}
+
+a:link, a:visited, a:focus, a:hover, a:active {
+	color: white;
+}

@@ -1,0 +1,35 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script defer src="client.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>Vue Calc</h1>
+        <div class="calculatorContainer">
+            <input id="calculatorInput1" type="text" v-model.number="operand1">
+            <input id="calculatorInput2" type="text" v-model.number="operand2">
+            <span v-if="op1Good && operand1 >= 0">&Sqrt;{{operand1}} = {{Math.sqrt(operand1)}}</span>
+            <span v-if="op1Good">({{operand1}})<sup>2</sup> = {{(operand1)*(operand1)}}</span>
+            <span v-if="op1Good">({{operand1}})<sup>3</sup> = {{(operand1)*(operand1)*(operand1)}}</span>
+            <span v-if="op1Good && isNonNegativeInteger(operand1)">{{operand1}}! = {{factorial}}</span>
+            <span v-if="op1Good && isPositiveInteger(operand1) && operand1==1">1 = {{addAll}}</span>
+            <span v-if="op1Good && isPositiveInteger(operand1) && operand1==2">1 + {{operand1}} = {{addAll}}</span>
+            <span v-if="op1Good && isPositiveInteger(operand1) && operand1==3">1 + 2 + {{operand1}} = {{addAll}}</span>
+            <span v-if="op1Good && isPositiveInteger(operand1) && operand1>=4">1 + 2 + ... + {{operand1}} = {{addAll}}</span>
+            <span v-if="op1Good && op2Good">{{operand1}} + {{operand2}} = {{operand1 + operand2}}</span>
+            <span v-if="op1Good && op2Good">{{operand1}} - {{operand2}} = {{operand1 - operand2}}</span>
+            <span v-if="op1Good && op2Good">{{operand1}} * {{operand2}} = {{operand1 * operand2}}</span>
+            <span v-if="op1Good && op2Good">{{operand1}} / {{operand2}} = {{operand1 / operand2}}</span>
+        </div>
+     
+    </div>
+</body>
+</html>

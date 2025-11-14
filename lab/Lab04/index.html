@@ -1,0 +1,35 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script defer src="client.js"></script>
+</head>
+<body>
+    <div id="app">
+        <img v-bind:src="'cupImages/' + cup3 + 'OutOf3.jpg'">
+        <img v-bind:src="'cupImages/' + cup5 + 'OutOf5.jpg'" alt="">
+        <br>
+        <button v-on:click="fill3">Fill the 3 cup container from the vat</button>
+        <br>
+        <button v-on:click="fill5">Fill the 5 cup container from the vat</button>
+        <br>
+        <button v-on:click="dump3">Dump the 3 cup container into the vat</button>
+        <br>
+        <button v-on:click="dump5">Dump the 5 cup container into the vat</button>
+        <br>
+        <button v-on:click="pour3To5">Pour as much as you can from the 3 cup container into the 5 cup container without spilling any</button>
+        <br>
+        <button v-on:click="pour5To3">Pour as much as you can from the 5 cup container into the 3 cup container without spilling any</button>
+        <br>
+        <button v-on:click="restart">Restart</button>
+        <br>
+        <span>{{message}}</span>
+        <p v-for="m of moveList" v-bind:key="m.id">{{m.text}}</p> 
+    </div>
+</body>
+</html>

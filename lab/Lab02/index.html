@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Responsive Images</h1>
+    <img src="AlbertBierstadtWesternLandscape.jpg" alt="">
+
+    <h2>Valley of the Yosemite</h2>
+    <img src="ValleyOfTheYosemite320.jpg" alt="Valley of the Yosemite painting" srcset="ValleyOfTheYosemite320.jpg 320w, ValleyOfTheYosemite640.jpg 640w, ValleyOfTheYosemite1280.jpg 1280w, ValleyOfTheYosemite2560.jpg 2560w" sizes="(max-width: 500px) 100vw, (max-width: 1000px) 50vw, 500px">
+    <br>
+    <img src="AStormInTheRockyMountains320.jpg" alt="A Storm In The Rocky Mountains" srcset="AStormInTheRockyMountains320.jpg 320w, AStormInTheRockyMountains640.jpg 640w, AStormInTheRockyMountains1280.jpg 1280w, AStormInTheRockyMountains2560.jpg 2560w" sizes="(max-width: 600px) 90vw, (max-width: 800px) 480px, 800px">
+    <br>
+    <picture>
+        <source media="(min-width: 1000px)" srcset="TheLastOfTheBuffalo1280.jpg 1280w, TheLastOfTheBuffalo2560.jpg 2560w, TheLastOfTheBuffalo5000.jpg 5000w" sizes="100vw">
+        <source media="(min-width: 600px)" srcset="TheLastOfTheBuffaloMedium640.jpg 640w, TheLastOfTheBuffaloMedium1280.jpg 1280w" sizes="100vw">
+        <img src="TheLastOfTheBuffaloClose640.jpg" srcset="TheLastOfTheBuffaloClose320.jpg 320w, TheLastOfTheBuffaloClose640.jpg 640w, TheLastOfTheBuffaloClose1280.jpg 1280w" sizes="100vw" alt="The Last of the Buffalo Painting">
+    </picture>
+
+</body>
+</html>

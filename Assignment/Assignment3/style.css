@@ -1,0 +1,73 @@
+
+
+body {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding: 0%;
+    background-color: ivory;
+}
+
+h1, h2, p, div{
+    text-align: center;
+}
+
+button {
+    margin: 1%;
+}
+ 
+#back, #next {
+    margin : 1% 5%
+}
+
+#back, #option1, #option2 {
+    visibility: hidden;
+}
+
+#sadEnding {
+    font-size: 80px;
+    color: brown;
+    text-shadow: 
+    -2px -2px 0 black,
+     2px -2px 0 black,
+    -2px  2px 0 black,
+     2px  2px 0 black;
+    display: none;
+}
+
+#happyEnding {
+    font-size: 80px;
+    color: green;
+    text-shadow: 
+    -2px -2px 0 black,
+     2px -2px 0 black,
+    -2px  2px 0 black,
+     2px  2px 0 black;
+    display: none;
+}
+
+#endBtn {
+    display: none;
+}
+
+#restartBtn {
+    color: white;
+    background-color: crimson;
+}
+
+
+h1{
+    text-shadow:
+    0 0 10px rgb(186, 197, 61);
+    margin-top: 2%;
+}
+
+img{
+    display: none;
+    max-height: 250px;
+    margin: 0px auto;
+}
+
+h2 {
+    text-shadow:
+    0 0 10px rgb(8, 200, 84);
+}

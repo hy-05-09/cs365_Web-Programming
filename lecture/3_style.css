@@ -1,0 +1,10 @@
+
+
+/* gallery id 요소 안에 있는 모든 img */
+#gallery img { 
+    border: 20px solid grey;
+}
+
+body {
+    background-image: url("img/cone.png");
+}

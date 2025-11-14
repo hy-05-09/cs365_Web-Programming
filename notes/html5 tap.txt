@@ -1,0 +1,18 @@
+html:5 tap
+
+head versus body
+head : 
+body : 
+
+characterset (charset) utf-8
+
+unicode
+
+form action="get" /post
+
+
+public domain  저작권 무료?
+ol>li*6
+table>tr*3>td*5
+
+br은 닫기태그 없은 예외적으로

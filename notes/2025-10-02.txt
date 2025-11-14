@@ -1,0 +1,6 @@
+컴공 10/02
+
+npm install -g nodemon
+
+package.json
+package.lock.json

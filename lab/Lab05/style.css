@@ -1,0 +1,25 @@
+
+
+body{
+	width: 100%;
+}
+
+#app {
+	display: flex;
+	column-gap: 30px;
+	align-items: flex-start;
+}
+
+
+.parallel {
+  display: flex;           
+  align-items: center;     
+  padding: 8px;            
+  margin-bottom: 10px;   
+}
+
+
+.parallel span {
+	text-align: center;
+	margin-right: 5%;
+}

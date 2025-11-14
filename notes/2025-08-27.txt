@@ -1,0 +1,5 @@
+content > padding > border > margin
+
+어쩌구 properties : 150%
+
+inheritance?

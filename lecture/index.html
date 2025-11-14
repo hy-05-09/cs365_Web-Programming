@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="client.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1 class="center">Trivia crevice</h1>
+        <!-- <span v-for="h of (5-hearts)">🖤</span>
+        <span v-for="h of hearts">🧡</span> -->
+        <span>
+            <span class="left" v-for="h of 5">{{(h<=hearts)?"🧡":"🖤"}}</span>
+        </span>
+        <!-- <div> is a block-level element; by default it uses the full width of its container -->
+        <!-- <span> is an inline element; by default it uses only as much width as needed -->
+        <div style="position: relative;" class="size300 flex">
+            <canvas class="size300 abs" id="myCanvas" width="300" height="300">
+                Your browser doesn't support canvas. Better upgrade.
+            </canvas>
+            <div class="size300 abs flex flexCenter">
+                <button >SPIN!</button>
+            </div>
+        </div>
+        
+        <!-- of랑 in 차이 설명하심 -->
+        <span class="right" v-for="category of categories" v-bind:class="{greyOut: !category.gotItRight}">{{category.avatar}}</span>
+        
+    </div>
+</body>
+</html>
