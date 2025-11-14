@@ -1,5 +1,7 @@
 ## 🎥 Demo Video
-<video src="./demo/demo.mp4" controls width="600"></video>
+https://github.com/user-attachments/assets/8341680d-717b-439e-b703-a584c323d250
+
+
 
 ## 🎮 Features
 - reactive state 관리
